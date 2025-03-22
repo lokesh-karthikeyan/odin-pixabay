@@ -1,24 +1,10 @@
-# README
+# The Odin Project - Pixabay API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A basic *Photo Widget* that shows matching *images* from the *searched keyword*.
 
-Things you may want to cover:
+From the multiple records, only **10 images** will be displayed.
 
-* Ruby version
+## Credits
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Credits to the [Milky Vintage font](https://www.dafont.com/milky-vintage.font) from [Dafont](https://www.dafont.com/).
+- Credits to [Pixabay](https://pixabay.com/) for providing **API** data containing images.
