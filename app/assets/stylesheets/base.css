@@ -1,0 +1,24 @@
+@import "normalize/normalize.css";
+
+@font-face {
+  font-family: "Milky-Vintage";
+  src:
+    url("MilkyVintage.woff2") format("woff2"),
+    url("MilkyVintage.woff") format("woff");
+}
+
+:root {
+  --system-ui:
+    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --card-bg: hsla(0 0% 80% / 0.9);
+  --black-color: hsl(0 0% 0%);
+  --white-color: hsl(360 100% 100%);
+  --blue-color: hsl(221 97% 57%);
+  --light-teal-color: hsl(171 100% 89%);
+}
+
+body {
+  font-family: "Milky-Vintage", var(--system-ui);
+  font-size: 20px;
+}
