@@ -1,0 +1,19 @@
+<div class="container">
+  <%= form_with url: root_path, method: :get do |form| %>
+    <%= form.search_field :query_string, placeholder: "Eg: 'Dog', 'Cat', 'Batman'" %>
+    <%= form.submit "Search" %>
+  <% end %>
+  <div class="image-container">
+    <% if @images&.any? %>
+      <% @images.each_with_index do |image, index| %>
+        <div class="image-wrapper">
+          <%= image_tag(image, alt: "#{@search_content}-#{index + 1}") %>
+        </div>
+      <% end %>
+    <% elsif @images&.empty? %>
+      <h2>No Images found 😟</h2>
+    <% else %>
+      <h2>Enter the keyword & start searching...</h2>
+    <% end %>
+  </div>
+</div>
